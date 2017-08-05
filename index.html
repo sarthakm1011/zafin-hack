@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>OFFER SUGGESTER</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <style>
+        
+		nav ul a,
+        nav .brand-logo {
+          color: #444;
+        }
+
+        p {
+          line-height: 2rem;
+        }
+
+        .button-collapse {
+          color: #26a69a;
+        }
+
+        .parallax-container {
+          min-height: 380px;
+          line-height: 0;
+          height: auto;
+          color: rgba(255,255,255,.9);
+        }
+          .parallax-container .section {
+            width: 100%;
+          }
+
+        @media only screen and (max-width : 992px) {
+          .parallax-container .section {
+            position: absolute;
+            top: 40%;
+          }
+          #index-banner .section {
+            top: 10%;
+          }
+        }
+
+        @media only screen and (max-width : 600px) {
+          #index-banner .section {
+            top: 0;
+          }
+        }
+
+        .icon-block {
+          padding: 0 15px;
+        }
+        .icon-block .material-icons {
+          font-size: inherit;
+        }
+
+        footer.page-footer {
+          margin: 0;
+        }
+        
+         .bg-image {
+            min-height: 30px;
+        }
+        
+        #index-banner {
+            min-height: 314px;
+        }
+        #logo-container {
+            color: #da181f;
+            font-family: inherit;
+            font-weight: 500;
+        }
+        
+        #searchLoader {
+            display: none;
+        }
+        
+        #result-modal {
+            color: black;
+        }
+        
+        #linksToScrape {
+            color: :black;
+        }
+        
+        #range-modal {
+            color:black;
+        }
+        
+        #footer-copyright-1 {
+            color:#FFF800;
+            font-weight: 600;
+            background-color:rgba(0,0,0,0.4);
+            padding: 0px 4px;
+        }
+        
+        
+    </style>    
+
+
+</head>
+    
+    
+<body>
+    
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container" id="nav-united">
+      <a id="logo-container" href="#" class="brand-logo" align=center><img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Zafin_horizontal_final.png" height="55px";width="55px"><span class="hide-on-small-only"></span></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2" style="background-color: rgba(0, 0, 0, 0.5)">Offer Suggester</h1>
+        <div class="row center">
+          <h5 class="header col s12 light" style="background-color: rgba(0, 0, 0, 0.6)">To find the Next Best Offer for the bank customer</h5>
+        </div>  
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="https://linkedinbackground.com/download/The-Industrialist.png"></div>
+  </div>
+
+  
+  <footer class="page-footer white">
+    <div class="container">
+        <div class="row center">
+            
+            <div class="input-field col s12 m6 l6">
+               <!-- Modal Trigger -->                                        
+               <a href="https://drive.google.com/open?id=0B1uq4wIX3f2ANjJXR1QtUGtBYnM"><button id="input-data" class="btn" style="background-color:#848484">Get Input Data</button></a>
+            </div>
+            <div class="input-field col s12 m6 l6">
+               <!-- Modal Trigger -->                                        
+               <a href="https://drive.google.com/open?id=0B1uq4wIX3f2AdTNOcXg3WktkRVU"><button id="output-data" class="btn" style="background-color:#848484">Get Predictions</button></a>                
+            </div> 
+        </div> 
+        
+    
+    <!-- FEATURE DISCOVERY -->
+        <div class="tap-target-wrapper" style="right: -348px; bottom: -327px; position: fixed;">
+            <div class="tap-target red darken-2" data-activates="input-data">
+                <div class="tap-target-content white-text" style="width: 456px; height: 400px; top: 0px; right: 0px; bottom: 0px; left: 0px; padding: 56px; vertical-align: bottom;">
+                    <p class="white-text">
+                        We have used a random bank data. The quality and amount of sensitive bank data is crucial for getting the accurate results. The actual data will generate rules which will help to give accurate predicions.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!-- FEATURE DISCOVERY ENDS -->
+    
+
+      <div class="row">
+        <div class="col l12 s12">
+          <p style="color:#848484">We are a team of college students working on this project like it's our full time job. On the basis of historic bank data of a customer what should we offer next. We have used a random bank data. The quality and amount of sensitive bank data is crucial for getting the accurate results. The actual data will generate rules which will help to give accurate predicions.</p>
+            <!--   .tap-target   -->
+            
+        </div>
+      </div>
+    </div>
+      
+    <div class="footer-copyright" >
+      <div class="container blue-grey-text darken-2">
+        Created By <a id="footer-copyright-1" href="https://www.hackerearth.com/sprints/unitedbyhcl/dashboard/MultiHumanPerceptron/team/">MultiHumanPerceptron</a> <a class="black-text text-darken-3" style="font-weight:800" href="https://github.com/pratulyab/quality-content-synthesizer">GitHub</a>
+      </div>
+    </div>
+    </footer>
+    
+    
+  <!-- SCRIPTS -->
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script>
+      
+     
+      
+  		$('#searchLoader').hide();
+      $("#searchReq").click(function(){
+			var $search_button = $(this);
+            var search_string = $("#search").val();
+            var n = $($('.range-field').find('span.value')[0]).text();
+			$.ajax({
+				url: '/search/',
+				type: 'GET',
+				data: {
+                    'q': search_string,
+                    'n': n
+                },
+				processData: true,
+				dataType: 'json',
+				beforeSend: function() {
+					$search_button.addClass('disabled');
+  					$('#searchLoader').show();
+					Materialize.toast("<span class='yellow-text text-lighten-1'><b>Fetching Results...</b></span>", 5000);
+				},
+				complete: function() {
+					$search_button.removeClass('disabled');
+  					$('#searchLoader').hide();
+					Materialize.toast("<span class='blue-text text-lighten-4'><b>Fetched Results!</b></span>", 5000);
+				},
+				success: function(data, status, xhr) { 
+					console.log(data);
+	               var $viewButton = $('<button id="view-result" data-target="result-modal" class="btn waves-effect waves-light modal-trigger blue">View Results</button>');
+				   $('#result-heading').text(" <" + search_string + ">")
+                    // TO DEFINE HOW THE RESULT WILL BE DISPLAYED HERE IN HTML
+					var $tbody = $('#results');
+					$tbody.empty();
+					for(var i=0; i<data.length; i++) {
+						var $tr = $('<tr/>'),
+							$td_rank = $('<td/>'),
+							$td_link = $('<td/>'),
+							$a = $('<a target="_blank"/>');
+						$a.text(data[i]);
+						$a.attr('href', data[i]);
+						$td_link.html($a);
+						$td_rank.html(i+1);
+						$tr.append($td_rank);
+						$tr.append($td_link);
+						$tbody.append($tr);
+					}
+					if (! $search_button.parent().find('#view-result').length)
+						$search_button.parent().append($viewButton);
+            		$('#result-modal').modal();
+
+				},
+				error: function(status, xhr, error) {
+					Materialize.toast("<span class='red-text'><b>Sorry, an error occurred.</b></span>", 5000);
+				},
+			});
+        });     
+  </script>
+    
+    <!--  INIT.JS  -->
+  <script>
+      (function($){
+          $(function(){
+
+            $('.button-collapse').sideNav();
+            $('.parallax').parallax();
+            $('#modal1').modal();
+            $('#range-modal').modal();  
+            $('select').material_select();  
+            $('.tooltipped').tooltip({delay: 50});  
+
+          }); // end of document ready
+        })(jQuery); // end of jQuery name space
+  </script>
+    
+
+  </body>
+</html>
